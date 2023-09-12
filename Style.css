@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    height: 105px;
+    width: 100%;
+    background: #780baa;
+}
+
+label.name {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 30px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 105px;
+    color: white;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 7px 7px;
+    border-radius: 5px;
+}
+
+.active:hover {
+    border: 1px solid white;
+    transition: .5s;
+}
+
+nav .icon {
+    color: white;
+}
+
+
+.info {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -190px;
+    font-size: 14px;
+}
+
+.data {
+    color: white;
+    margin-top: -17px;
+    margin-left: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.about_me {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+}
+
+.about_logo {
+    margin: 10px;
+    width: 140%;
+}
+
+.about_me_logo {
+    height: 100%;
+    width: 100%;
+}
+
+.about_info {
+    margin: 10px;
+}
+
+.about_head {
+    margin: 100px 10px 5px 30px;
+    font-size: 55px;
+    font-weight: bold;
+    color: #780baa;
+}
+
+.wave_svg {
+    height: 60px;
+    margin-left: 20px;
+    animation-name: wave;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+
+}
+
+.about_description {
+    margin: 10px 5px 5px 30px;
+    font-size: 25px;
+    /* border: 1px solid red; */
+    color: rgb(99 92 92);
+}
+
+.skills {
+    margin-top: 50px;
+    height: fit-content;
+    width: 100%;
+}
+
+.skills_heading {
+    font-size: 55px;
+    padding-left: 60px;
+    color: #780baa;
+    font-weight: bold;
+}
+
+.skills_box_area {
+    padding-top: 5px;
+    height: fit-content;
+    margin: 20px 10px 20px 60px !important;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.skills_box1,
+.skills_box2,
+.skills_box3,
+.skills_box4,
+.skills_box5,
+.skills_box6,
+.skills_box7 {
+    border-radius: 10px;
+    box-shadow: 0 0 8px grey;
+    margin: 20px;
+    height: 60% !important;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.skills_image {
+    height: 170px;
+}
+
+.skills_image img {
+    margin: 25px;
+    padding: 10px;
+    width: 110px;
+    height: 100px;
+}
+
+.progress_percent1,
+.progress_percent2,
+.progress_percent3,
+.progress_percent4,
+.progress_percent5,
+.progress_percent6,
+.progress_percent7 {
+    color: black;
+    display: inline;
+    position: relative;
+    margin-left: 220px;
+    display: none;
+}
+
+.skills_experience {
+    margin: 10px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    height: 12px;
+    justify-content: center;
+}
+
+.exp {
+    margin: 1px;
+    position: relative;
+    height: 10px;
+    border-radius: 30px;
+    background-color: #780baa;
+}
+
+.skill1 {
+    width: 95%;
+}
+
+.skill2 {
+    width: 95%;
+}
+
+.skill3 {
+    width: 87%;
+}
+
+.skill4 {
+    width: 85%;
+}
+
+.skill5 {
+    width: 85%;
+}
+
+.skill6 {
+    width: 80%;
+}
+
+.skill7 {
+    width: 70%;
+}
+
+.css {
+    width: 100px !important;
+}
+
+.js {
+    width: 150px !important;
+}
+
+.projects {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    height: fit-content;
+    width: 100%;
+}
+
+.projects_heading {
+    font-size: 55px;
+    padding-left: 60px;
+    color: #780baa;
+    font-weight: bold;
+}
+
+.projects_box_area {
+    padding-top: 5px;
+    /* border: 1px solid red; */
+    height: fit-content;
+    margin: 20px 10px 20px 60px !important;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.projects_box {
+    /* border: 1px solid red; */
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    text-align: left;
+}
+
+.bullet {
+    background-color: black;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    height: 7px;
+    width: 15px;
+    margin: 25px 0 10px 30px;
+}
+
+.project_title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.project_description {
+    display: flex;
+}
+
+.description {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.line {
+    margin: 30px 0px 5px 150px;
+    padding-left: 100px;
+    height: 1.5px;
+    width: 70%;
+    background-color: #c7c0c0;
+    box-shadow: 0 0 1px #c7c0c0;
+}
+
+.Recommendations {
+    margin-top: 50px;
+    height: fit-content;
+    width: 100%;
+}
+
+.recommendation_heading {
+    font-size: 55px;
+    padding-left: 60px;
+    color: #780baa;
+    font-weight: bold;
+}
+
+.recommendation_box_area {
+    padding-top: 5px;
+    height: fit-content;
+    margin: 20px 10px 20px 60px !important;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.recommendation_box {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    font-size: 20px;
+    width: 23%;
+    height: 160px !important;
+    text-align: left;
+}
+
+.Recommend_leave {
+    margin-top: 80px;
+    height: fit-content;
+    width: 45%;
+    margin-left: 27.5%;
+
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.area {
+    margin: 10px;
+}
+
+.recommender_name {
+    margin: 10px;
+    width: 625px;
+    height: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.message {
+    margin: 10px;
+    width: 625px;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.submit {
+    width: 170px;
+    height: 40px;
+    color: #780baa;
+    border: 1px solid #780baa;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.submit:hover {
+    background-color: #780baa;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: black;
+    height: 10vh;
+    color: white;
+    font-size: 13px;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.jatin {
+    font-size: 17px;
+}
+
+.top_arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #780baa;
+    border: #780baa;
+    border-radius: 50%;
+    position: fixed;
+    right: 0.5rem;
+    z-index: 20;
+    bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrow {
+    color: white;
+}
+
+
+@keyframes wave {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-8.0deg)
+    }
+
+    50% {
+        transform: rotate(14.0deg)
+    }
+
+    60% {
+        transform: rotate(-8.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
