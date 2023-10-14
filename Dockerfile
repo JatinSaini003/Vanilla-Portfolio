@@ -1,3 +1,9 @@
-FROM node:14-alpine3.16
+FROM node:alpine
 
-WORKDIR /the/workdir/path
+WORKDIR /app
+
+COPY . /app/
+
+RUN npm i
+
+CMD [ "node", "index.js" ]
