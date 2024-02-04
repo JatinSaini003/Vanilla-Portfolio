@@ -3,6 +3,7 @@ document.getElementById("skills_box1").addEventListener("mouseover", () => {
     document.getElementById("progress_percent1").style.display = 'block';
 });
 
+
 document.getElementById("skills_box1").addEventListener("mouseout", () => {
     console.log("hello")
     document.getElementById("progress_percent1").style.display = 'none';
