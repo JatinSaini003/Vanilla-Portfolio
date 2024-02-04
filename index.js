@@ -8,7 +8,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname);
 })
 
-// LocalHost
 app.listen(4000, () => {
     console.log("Websites hosted on localhost 4000");
 })
