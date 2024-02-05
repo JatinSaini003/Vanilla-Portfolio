@@ -1,4 +1,4 @@
 set -e
-conatiner_id=`docker ps | awk -F " " '{print $1}'`
-docker rm -f $container_id
+conatiner_id=`sudo docker ps | awk -F " " '{print $1}'`
+sudo docker rm -f $container_id
 
